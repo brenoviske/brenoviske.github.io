@@ -1,158 +1,353 @@
 body {
     padding: 0;
     margin: 0;
-    background-image: url(https://i.pinimg.com/originals/8c/f6/06/8cf60608f95bfae20a9e78884e1a33cb.gif);
-    background-size: cover;
-    background-position: center;
+    background: radial-gradient(circle,rgb(32, 32, 32),rgb(15, 15, 15),black);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
 }
 
 header {
-
-   background-color: black; 
-   border-bottom: solid rgb(118, 7, 118);
-   border-bottom-right-radius: 20px;
-   border-bottom-left-radius: 20px;
-   height: 80px;
-
+    height: 70px;
+    width: auto;
 }
-
 
 #navegationbar {
 
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
-    gap: 70px;
+    justify-content: center;
+    gap: 40px;
     padding-top: 20px;
 
+}
+#apresentationcontainer {
+
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   gap: 40px;
+   border-bottom: solid white;
+   border-radius: 40px;
+   margin-top: 40px;
+   margin-right: 200px;
+   margin-left: 200px;
+   padding-bottom: 100px;
+
+}
+
+#apresentation{
+    border: none;
+    padding: 10px;
+}
+
+#imagecontainer {
+    padding: 10px;
+}
+#resumearea{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding-bottom: 20px;
+    margin: right 40px;
+    margin-left: 400px;
+    margin-right: 400px;
+    padding: 30px;
+    border: none;
+}
+
+.maintext{
+    font-size: 30px;
+    font-weight: lighter;
+    font-family: system-ui;
+    color: white;
+    text-shadow: 1px 1px 14px rgb(8, 222, 118);
+}
+
+#skillscontainer {
+    margin-top: 100px;
+    border-bottom: solid rgb(8, 222, 118);
+    padding: 40px;
+    border-radius: 40px;
+}
+
+#personalphoto {
+    width: 250px;
+    height:250px;
+    border-radius: 10px;
+    border: none;
+    background-image: url(https://media-gru2-2.cdn.whatsapp.net/v/t61.24694-24/483478590_518959244585548_2071343052534801928_n.jpg?ccb=11-4&oh=01_Q5Aa1gElZsTawqY-0T46WG-sfgr06DoM8bVZCriYpCh3sjul3Q&oe=682F7BD7&_nc_sid=5e03e0&_nc_cat=101);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 1000ms ease-in-out;
+    cursor: pointer;
+}
+#personalphoto:hover {
+    transform: scale(1,1.08);
+}
+
+.navlink {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-family: system-ui;
+    font-weight: lighter;
+    text-shadow: 1px 1px 14px rgb(8, 222, 118);
+
+}
+
+.headertag {
+
+    font-size: 40px;
+    font-family: system-ui;
+    font-weight: lighter;
+    color: white;
+    text-shadow: 1px 1px 14px rgb(8, 222, 118);
     
 }
 
-.navlink{
+#buttoncontainer {
 
-    color:  rgb(218, 6, 218);
-    text-decoration: none;
-    font-family: system-ui;
-    font-size: 30px;
-    font-weight: lighter;
-    text-shadow: 1px 1px 10px white;
-    cursor: pointer;
-    transition: transform 500ms ease-in-out;
-}
-
-.navlink:hover{
-    transform: scale(1,1.06);
-}
-
-
-#gridcontainer {
-    border: none;
     display: grid;
-    grid-template-columns: repeat(3,2fr);
-    padding: 20px 20px 20px 20px;
-    margin-top: 40px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr  ;
+    place-items: center;
+
 }
 
-#flexcontainer1{
+
+
+.cards{
+
+    width: 200px;
+    height: 200px;
+    border: black;
+    border-radius: 10px;
+    box-shadow: 1px 1px 14px white;
+    opacity: 0.6;
+    transition: transform 1000ms ease-in-out;
+    filter: brightness();
+
+}
+
+.cards:hover {
+
+    transform: rotateY(360deg);
+
+}
+
+#skillheadertag{
+
+    color: rgb(8, 222, 118);
+    font-family: system-ui;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 1px 1px 14px rgb(8, 222, 118);
+
+}
+#resumeheadertag {
+
+    font-family: system-ui;
+    font-weight: 500;
+    font-style: initial;
+    font-size: 60px;
+
+}
+#firststrong {
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow:none;
+    color: rgb(8, 222, 118);
+}
+
+#secondstrong {
+
+    border: solid white;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: system-ui;
+    font-weight: bold;
+    box-shadow: 4px 4px rgb(8, 222, 118);
+    color: rgb(8, 222, 118);
+    text-shadow: 1px 1px white;
+
+}
+
+#contactbutton{
+
     border: none;
-    padding-left: 20px;
-    padding-bottom: 20px;
-    margin-left: 50px;
-    padding: 20px;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: system-ui;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(8, 222, 118);
+    text-shadow: 1px 1px 10px black;
+    box-shadow: 1px 1px 10px white;
+    cursor: pointer;
+
+}
+#resumeheadertag {
+
+    text-align: center;
+    color: rgb(8, 222, 118);
+    text-shadow: 1px 1px 10px rgb(8, 222, 118)
+
 }
 
-#flexcontainer2{
+#projectcontainer {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+    margin-right: 100px;
+    margin-left: 50px;
+    gap: 40px;
+    
+}
+
+#imagecontainer {
+
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
-#flexcontainer3{
-    border: none;
-    margin-right: 50px;
-    padding: 20px;
-}
-.headertag {
-
-    color: rgb(218, 6, 218);
-    font-family: system-ui;
-    font-size: 30px;
-    font-weight: bold;
-    text-shadow: 1px 1px  white;
-}
-
-strong{
-    color: rgb(8, 221, 8);
-    text-shadow: 1px 1px 14px white;
-}
-.headertag2 {
-    color: white;
-    font-family: system-ui;
-    font-size: 30px;
-    font-weight: lighter;
-    text-shadow: 2px 2px 14px rgb(218, 6, 218);
-}
-
-.maintext {
-
-    font-family: system-ui;
-    font-weight: bold;
-    font-size: 30px;
-    color: white;
-    text-shadow: 2px 2px  rgb(218, 6, 218);
-}
-
-#resumecard {
-
-    border: none;
-    border-radius: 8px;
-    width: 300px;
-    height: 400px;
-    font-family: system-ui;
-    font-size: 40px;
-    font-weight: bold;
-    color: white;
-    box-shadow: 2px 2px 15px rgb(218, 6, 218);
-    transition: transform 1000ms ease-in-out;
-    background-image: url(https://i.pinimg.com/originals/c6/e2/2c/c6e22c1062dae86c08c85d64b0735fd9.gif);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#resumecard:hover {
-
-    transform: rotateY(360deg)
+    gap: 10px;
 
 }
 
-#cttbutton{
+.projectimage {
 
-    font-family: system-ui;
-    font-size: 20px;
-    font-weight: lighter;
-    padding: 10px;
+    width: 400px;
+    height: 200px;
     border: none;
     border-radius: 10px;
+    box-shadow: 1px 1px 10px rgb(8, 222, 118);
+}
+
+#projectheadertag {
+    font-family: system-ui;
+    color: rgb(8, 222, 118);
+    text-align: start;
+}
+
+#projecttext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+#projectbutton {
+
     color: white;
-    background-color: rgb(218, 6, 218);
-    text-shadow: 1px 1px black;
-    margin-top: 30px;
+    background-color: rgb(8, 222, 118);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    text-shadow: 1px 1px  10px black;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 1px 1px 10px white;
+    cursor: pointer;
 }
 
-#social{
+#firstproject {
 
+    background: url(../images/JapanWebsite.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+
+}
+
+#secondproject {
+    background: url(../images/Devforgeatestados.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+
+}
+
+#chattag {
+
+    display: block;
     text-align: center;
-    text-decoration-line:
+    color: rgb(8, 222, 118);
+    font-family: system-ui;
+    font-weight: bold;
+    font-size: 40px;
+    text-shadow: 1px 1px 10px rgb(8, 222, 118);
+    margin-top: 100px;
 }
 
-#socialcontainer {
+.credentials{
+
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    width: 300px;
+    background-color: rgb(186, 185, 185);
+}
+
+#chatbox {
+
+    border: none;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    background-color: rgb(186, 185, 185);
+    text-align: start;
+
+
+}
+
+#chatcontainer {
 
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    gap: 10px;
+    padding: 20px;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    margin-right: 700px;
+    margin-left: 700px;
+    margin-bottom: 100px;
+    box-shadow: 1px 1px 10px white;
+    border: solid rgb(8, 222, 118);
+
 
 }
 
+#submitbutton {
+
+    border: none;
+    color: white;
+    font-family: system-ui;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 10px black;
+    padding: 10px;
+    background-color: rgb(8, 222, 118);
+    border-radius: 10px;
+    box-shadow: 1px 1px 14px white;
+    cursor: pointer;
+    margin-left: 820px;
+    margin-right: 820px;
+    margin-bottom: 100px;
+
+}
