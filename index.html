@@ -10,40 +10,64 @@
     <header>
         <nav id="navegationbar">
             <a href="" class="navlink"> About Me </a>
-            <a href="" class="navlink"> Templates</a>
+            <a href="" class="navlink"> Templates </a>
             <a href="" class="navlink"> Projects </a>
         </nav>
     </header>
-    <main id="gridcontainer">
-        <section id="flexcontainer1">
-            <h1 class="headertag"> Designer </h1>
-            <h2 class="headertag2"> <strong>P</strong>owerful and <strong>C</strong>reative</h2>
+    <main>
+        <section id="apresentationcontainer">
+            <div id="apresentation">
+                <h1 class="headertag"> Hi , I'm <strong id="firststrong"> Breno Sampaio </strong> </h1>
+                <h1 class="headertag"> <strong id="secondstrong">Full Stack</strong> Developer </h1>
+                <button id="contactbutton"> Contact Me </button>
+            </div>
+            <div id="imagecontainer">
+                <button id="personalphoto"></button>
+            </div>
+        </section>
+        <section id="resumearea">
+            <h1 class="headertag2" id="resumeheadertag"> WHO AM I ?</h1>
             <article class="maintext">
-                For those who seek to reinvent themselves in search of new experiences and journeys. Count on the experience of a dedicated professional, committed to dynamic designs and innovative solutions for your projects, from the most basic to the most advanced, made for those who want the best from their product.
+                Hey there, I am very delighted to have you visiting my portfolio. <br> <br>
+                I am a 21 years old software student, comitted to inovative solutions, aiming always high to leave a positive mark in  the digital World. <br><br>
+                Since I was a child, I have always loved playing video games with my friends, which is why I fell in love with the world of technology and its discoveries. <br><br>
+                In my free time, I like to go out, study, play and read, an experience that I consider to be enriching for my behavioral skills.
+                Feel free to explore and discover a little more about my story
+            </article>
+        </section>
+        <section id="skillscontainer">
+            <h1 id="skillheadertag"> Skills</h1>
+            <div id="buttoncontainer">
+                <button class="cards" id="htmlcard"><img src="../images/devicon--html5.png" alt=""></button>
+                <button class="cards" id="csscard"><img src="../images/devicon--css3.png" alt="" id="csscard"></button>
+                <button class="cards" id="jscard"><img src="../images/skill-icons--javascript.png" alt=""></button>
+                <button class="cards" id="pythoncard"> <img src="../images/material-icon-theme--python.png" alt=""></button>
+                <button class="cards" id="flaskcard"><img src="../images/FLASK.png" alt="" id="python"></button>
+            </div>
+        </section>
+        <section id="projectcontainer">
+            <article class="maintext" id="projecttext">
+                <h1 id="projectheadertag"> Dinamic Projects </h1>
+                With a strong programming background, from AI to frameworks, count with a dedicated professional specialized in responsive applications.
+                <br>
+                Made for those who wants the best of their product.
+                <button id="projectbutton"> See Projects </button>
+            </article>
 
-            </article>
-            <button id="cttbutton"> Contact Me</button>
-        </section>
-        <section id="flexcontainer2">
-            <button id="resumecard"> Resume </button>
-        </section>
-        <section id="flexcontainer3">
-            <h1 class="headertag"> Developer </h1>
-            <h2 class="headertag2"> <strong>I</strong>ngenius and <strong>V</strong>ersatile</h2>
-            <article class="maintext">
-                From AI to Web Development, I am a versatile developer with a passion for creating innovative solutions. With experience in various programming languages and frameworks, I am committed to delivering high-quality code and exceptional user experiences. Let's work together to bring your ideas to life and make a positive impact in the digital world.
-            </article>
+            <div id="imagecontainer">
+                <button class="projectimage" id="firstproject"></button>
+                <button class="projectimage" id="secondproject"></button>
+            </div>
         </section>
     </main>
     <footer>
-        <h1 class="headertag" id="social"> Social</h1>
-        <div id="socialcontainer">
-            <a href=""><i></i></a>
-            <a href=""><i></i></a>
-            <a href=""><i></i></a>
-            <a href=""><i></i></a>
+        <h1 id="chattag"> Let Us have a chat. </h1>
+        <div id="chatcontainer">
+            <input type="text" placeholder="Your Name" class="credentials">
+            <input type="text" placeholder="Email Address" class="credentials">
+            <input type="text" placeholder="Chat Here" id="chatbox">
         </div>
     </footer>
-    
+    <button id="submitbutton"> Submit </button>
 </body>
 </html>
