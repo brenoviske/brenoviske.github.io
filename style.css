@@ -92,7 +92,7 @@ header {
     height:250px;
     border-radius: 10px;
     border: none;
-    background: url(../images/profilephoto.jpg);
+    background: url(./static/images/profilephoto.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -276,7 +276,7 @@ header {
 
 #firstproject {
 
-    background: url(../images/JapanWebsite.png);
+    background: url(./static/images/JapanWebsite.png);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -284,7 +284,7 @@ header {
 }
 
 #secondproject {
-    background: url(../images/DevforgeAtestados.png);
+    background: url(./static/images/DevforgeAtestados.png);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;

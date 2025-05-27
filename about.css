@@ -78,7 +78,7 @@ header{
     width: 300px;
     height: 300px;
     border-radius: 400px;
-    background-image: url(../images/Profilephoto2.jpeg);
+    background-image: url(./static/images/Profilephoto2.jpeg);
     background-size: cover;
     background-position: center;
     border: none;
