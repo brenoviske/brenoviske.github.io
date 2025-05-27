@@ -1,7 +1,7 @@
 body {
     padding: 0;
     margin-top: 0;
-    background-color: black;
+    background: radial-gradient(rgb(45, 45, 45),rgb(17, 16, 16),black);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

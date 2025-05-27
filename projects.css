@@ -1,7 +1,13 @@
 body {
     padding: 0px 0px 100px 0px;
     margin: 0;
-    background: black;
+    background: radial-gradient(rgb(45, 45, 45),rgb(17, 16, 16),black);
+     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+
 }
 
 header {
